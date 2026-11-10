@@ -228,6 +228,17 @@ class ProfilSaya extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          duration: Duration(seconds: 2),
+          content: Text('anda bisa menambahkan Matakuliah'),
+          backgroundColor: Colors.deepOrange,
+          ));
+      },
+      mini: true,
+      child: Icon(Icons.add),
+      backgroundColor: Colors.deepOrange,
+      ),      
     );
   }
 }
