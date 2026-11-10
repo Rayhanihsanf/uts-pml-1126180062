@@ -46,7 +46,7 @@ class ProfilSaya extends StatelessWidget {
               child: Icon(Icons.person, size: 40, color: Colors.white,),
               backgroundColor: Colors.grey,
             ),
-            SizedBox(height: 15,),
+            SizedBox(height: 15),
             Text(
               nama,
               style: TextStyle(
@@ -75,6 +75,11 @@ class ProfilSaya extends StatelessWidget {
                 fontSize: 15,
                 color: Colors.black,
               ),
+            ),
+            SizedBox(height: 15),
+            ElevatedButton.icon(onPressed: (){}, 
+            label: Text('Edit'),
+            icon: Icon(Icons.edit),
             ),
           ],
         ),
