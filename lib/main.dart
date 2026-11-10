@@ -18,6 +18,10 @@ class MainApp extends StatelessWidget {
 }
 class ProfilSaya extends StatelessWidget {
   const ProfilSaya({super.key});
+  final String nama = 'Rayhan Ihsan Fadhilah';
+  final String nim = '1126180062';
+  final String prodi = 'Teknik Informatika';
+  final String role = 'Mahasiswa Global Institut';
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +36,20 @@ class ProfilSaya extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.deepOrange,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          CircleAvatar(
-            radius: 40,
-            child: Icon(Icons.person, size: 40, color: Colors.white,),
-            backgroundColor: Colors.grey,
-          )
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 40,
+              child: Icon(Icons.person, size: 40, color: Colors.white,),
+              backgroundColor: Colors.grey,
+            ),
+            SizedBox(height: 15,),
+
+          ],
+        ),
       ),
     );
   }
