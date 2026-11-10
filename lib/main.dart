@@ -110,6 +110,13 @@ class ProfilSaya extends StatelessWidget {
                       subtitle: Text('+62 83819049467'),
                     ),
                     ),
+                    Card(
+                      child:  ListTile(
+                      leading: Icon(Icons.home),
+                      title: Text('Alamat'),
+                      subtitle: Text('Mulya Asri 2 Blok H2/06'),
+                    ),
+                    ),
                   ],
                 )
               ],
