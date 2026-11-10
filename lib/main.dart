@@ -25,8 +25,14 @@ class ProfilSaya extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Profil Rayhan Ihsan Fadhilah',
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
+        centerTitle: true,
+        backgroundColor: Colors.deepOrange,
       ),
+      body: Column(),
     );
   }
 }
