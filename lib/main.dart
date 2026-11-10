@@ -103,6 +103,13 @@ class ProfilSaya extends StatelessWidget {
                       subtitle: Text('rayhanihsanfadhilah@gmail.com'),
                     ),
                     ),
+                    Card(
+                      child:  ListTile(
+                      leading: Icon(Icons.phone),
+                      title: Text('No Hp'),
+                      subtitle: Text('+62 83819049467'),
+                    ),
+                    ),
                   ],
                 )
               ],
