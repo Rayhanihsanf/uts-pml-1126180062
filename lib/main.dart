@@ -92,6 +92,21 @@ class ProfilSaya extends StatelessWidget {
               ),),
             ),
             Divider(),
+            Expanded(child: ListView(
+              children: [
+                Column(
+                  children: [
+                    Card(
+                      child:  ListTile(
+                      leading: Icon(Icons.email),
+                      title: Text('Email'),
+                      subtitle: Text('rayhanihsanfadhilah@gmail.com'),
+                    ),
+                    ),
+                  ],
+                )
+              ],
+            ))
           ],
         ),
       ),
