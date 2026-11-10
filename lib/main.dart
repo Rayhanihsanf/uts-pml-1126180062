@@ -81,6 +81,16 @@ class ProfilSaya extends StatelessWidget {
             label: Text('Edit'),
             icon: Icon(Icons.edit),
             ),
+            SizedBox(height: 15),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text('Data Diri',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.black
+              ),),
+            )
           ],
         ),
       ),
