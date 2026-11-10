@@ -97,6 +97,8 @@ class ProfilSaya extends StatelessWidget {
                 Column(
                   children: [
                     Card(
+                      elevation: 3,
+                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
                       leading: Icon(Icons.email),
                       title: Text('Email'),
@@ -104,6 +106,8 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     ),
                     Card(
+                      elevation: 3,
+                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
                       leading: Icon(Icons.phone),
                       title: Text('No Hp'),
@@ -111,11 +115,111 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     ),
                     Card(
+                      elevation: 3,
+                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
                       leading: Icon(Icons.home),
                       title: Text('Alamat'),
                       subtitle: Text('Mulya Asri 2 Blok H2/06'),
                     ),
+                    ),
+                    Card(
+                      elevation: 3,
+                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
+                      child:  ListTile(
+                      leading: Icon(Icons.person),
+                      title: Text('Github'),
+                      subtitle: Text('Rayhaihsanf'),
+                    ),
+                    ),
+                  ],
+                )
+              ],
+            )),
+            SizedBox(height: 15),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text('Matakuliah',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.black
+              ),),
+            ),
+            Divider(),
+            Expanded(child: ListView(
+              children: [
+                Column(
+                  children: [
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('RPL',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('Aplikasi Mobile',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('IT Governance',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('Sistem Pakar',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('ERP',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('PBO I',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: Icon(Icons.book),
+                        title: Text('Visual II',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),),
+                      ),
                     ),
                   ],
                 )
