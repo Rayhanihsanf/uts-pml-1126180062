@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(MainApp())
+  runApp(MainApp());
 }
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -11,6 +11,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: 'Profil Rayhan',
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
     );
   }
 }
