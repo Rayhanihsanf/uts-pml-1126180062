@@ -39,7 +39,8 @@ class ProfilSaya extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+        child: SafeArea(
+          child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
@@ -116,6 +117,7 @@ class ProfilSaya extends StatelessWidget {
             ))
           ],
         ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(onPressed: (){
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -162,7 +164,7 @@ class DataDiri extends StatelessWidget {
           child: ListTile(
             leading: Icon(Icons.home, color: Colors.deepOrange),
             title: Text('Alamat'),
-            subtitle: Text('Mulya Asri 2 Blok H2/06'),
+            subtitle: Text('Mulya Asri 2 Blok H2/06 Kab.Tangerang, Cikupa'),
           ),
         ),
         Card(
@@ -186,6 +188,8 @@ class MataKuliah extends StatelessWidget {
     return const Column(
       children: [
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
@@ -195,6 +199,8 @@ class MataKuliah extends StatelessWidget {
           ),
         ),
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
@@ -204,6 +210,8 @@ class MataKuliah extends StatelessWidget {
           ),
         ),
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
@@ -213,6 +221,8 @@ class MataKuliah extends StatelessWidget {
           ),
         ),
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
@@ -222,6 +232,8 @@ class MataKuliah extends StatelessWidget {
           ),
         ),
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
@@ -231,6 +243,8 @@ class MataKuliah extends StatelessWidget {
           ),
         ),
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
@@ -240,6 +254,8 @@ class MataKuliah extends StatelessWidget {
           ),
         ),
         Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
           child: ListTile(
             leading: Icon(Icons.book, color: Colors.deepOrange),
             title: Text(
