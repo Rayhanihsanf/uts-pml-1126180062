@@ -111,80 +111,7 @@ class ProfilSaya extends StatelessWidget {
             Divider(),
             Expanded(child: ListView(
               children: [
-                Column(
-                  children: [
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book, color: Colors.deepOrange,),
-                        title: Text('RPL',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book, color: Colors.deepOrange,),
-                        title: Text('Aplikasi Mobile',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book, color: Colors.deepOrange,),
-                        title: Text('IT Governance',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book,  color: Colors.deepOrange,),
-                        title: Text('Sistem Pakar',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book, color: Colors.deepOrange,),
-                        title: Text('ERP',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book, color: Colors.deepOrange,),
-                        title: Text('PBO I',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        leading: Icon(Icons.book, color: Colors.deepOrange,),
-                        title: Text('Visual II',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),),
-                      ),
-                    ),
-                  ],
-                )
+                MataKuliah(),
               ],
             ))
           ],
@@ -245,6 +172,80 @@ class DataDiri extends StatelessWidget {
             leading: Icon(Icons.person, color: Colors.deepOrange),
             title: Text('Github'),
             subtitle: Text('Rayhaihsanf'),
+          ),
+        ),
+      ],
+    );
+  }
+}
+class MataKuliah extends StatelessWidget {
+  const MataKuliah({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      children: [
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'RPL',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+        ),
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'Aplikasi Mobile',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+        ),
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'IT Governance',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+        ),
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'Sistem Pakar',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+        ),
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'ERP',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+        ),
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'PBO I',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+          ),
+        ),
+        Card(
+          child: ListTile(
+            leading: Icon(Icons.book, color: Colors.deepOrange),
+            title: Text(
+              'Visual II',
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
           ),
         ),
       ],
