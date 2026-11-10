@@ -27,6 +27,7 @@ class ProfilSaya extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [IconButton(onPressed: (){}, icon: Icon(Icons.logout, color: Colors.white,))],
         title: Text(
           'Profil Rayhan Ihsan Fadhilah',
           style: TextStyle(
@@ -100,7 +101,7 @@ class ProfilSaya extends StatelessWidget {
                       elevation: 3,
                       margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
-                      leading: Icon(Icons.email),
+                      leading: Icon(Icons.email, color: Colors.deepOrange,),
                       title: Text('Email'),
                       subtitle: Text('rayhanihsanfadhilah@gmail.com'),
                     ),
@@ -109,7 +110,7 @@ class ProfilSaya extends StatelessWidget {
                       elevation: 3,
                       margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
-                      leading: Icon(Icons.phone),
+                      leading: Icon(Icons.phone, color: Colors.deepOrange,),
                       title: Text('No Hp'),
                       subtitle: Text('+62 83819049467'),
                     ),
@@ -118,7 +119,7 @@ class ProfilSaya extends StatelessWidget {
                       elevation: 3,
                       margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
-                      leading: Icon(Icons.home),
+                      leading: Icon(Icons.home, color: Colors.deepOrange,),
                       title: Text('Alamat'),
                       subtitle: Text('Mulya Asri 2 Blok H2/06'),
                     ),
@@ -127,7 +128,7 @@ class ProfilSaya extends StatelessWidget {
                       elevation: 3,
                       margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
                       child:  ListTile(
-                      leading: Icon(Icons.person),
+                      leading: Icon(Icons.person, color: Colors.deepOrange,),
                       title: Text('Github'),
                       subtitle: Text('Rayhaihsanf'),
                     ),
@@ -153,7 +154,7 @@ class ProfilSaya extends StatelessWidget {
                   children: [
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book, color: Colors.deepOrange,),
                         title: Text('RPL',
                         style: TextStyle(
                           fontSize: 18,
@@ -163,7 +164,7 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book, color: Colors.deepOrange,),
                         title: Text('Aplikasi Mobile',
                         style: TextStyle(
                           fontSize: 18,
@@ -173,7 +174,7 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book, color: Colors.deepOrange,),
                         title: Text('IT Governance',
                         style: TextStyle(
                           fontSize: 18,
@@ -183,7 +184,7 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book,  color: Colors.deepOrange,),
                         title: Text('Sistem Pakar',
                         style: TextStyle(
                           fontSize: 18,
@@ -193,7 +194,7 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book, color: Colors.deepOrange,),
                         title: Text('ERP',
                         style: TextStyle(
                           fontSize: 18,
@@ -203,7 +204,7 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book, color: Colors.deepOrange,),
                         title: Text('PBO I',
                         style: TextStyle(
                           fontSize: 18,
@@ -213,7 +214,7 @@ class ProfilSaya extends StatelessWidget {
                     ),
                     Card(
                       child: ListTile(
-                        leading: Icon(Icons.book),
+                        leading: Icon(Icons.book, color: Colors.deepOrange,),
                         title: Text('Visual II',
                         style: TextStyle(
                           fontSize: 18,
@@ -236,7 +237,7 @@ class ProfilSaya extends StatelessWidget {
           ));
       },
       mini: true,
-      child: Icon(Icons.add),
+      child: Icon(Icons.add, color: Colors.white,),
       backgroundColor: Colors.deepOrange,
       ),      
     );
