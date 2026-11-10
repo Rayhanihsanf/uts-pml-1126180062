@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
       title: 'Profil Rayhan',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
+      home: ProfilSaya(),
     );
   }
 }
