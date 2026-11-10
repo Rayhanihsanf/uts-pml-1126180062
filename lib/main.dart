@@ -32,7 +32,16 @@ class ProfilSaya extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.deepOrange,
       ),
-      body: Column(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            radius: 40,
+            child: Icon(Icons.person, size: 40, color: Colors.white,),
+            backgroundColor: Colors.grey,
+          )
+        ],
+      ),
     );
   }
 }
