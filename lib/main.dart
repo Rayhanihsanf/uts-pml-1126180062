@@ -95,46 +95,7 @@ class ProfilSaya extends StatelessWidget {
             Divider(),
             Expanded(child: ListView(
               children: [
-                Column(
-                  children: [
-                    Card(
-                      elevation: 3,
-                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
-                      child:  ListTile(
-                      leading: Icon(Icons.email, color: Colors.deepOrange,),
-                      title: Text('Email'),
-                      subtitle: Text('rayhanihsanfadhilah@gmail.com'),
-                    ),
-                    ),
-                    Card(
-                      elevation: 3,
-                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
-                      child:  ListTile(
-                      leading: Icon(Icons.phone, color: Colors.deepOrange,),
-                      title: Text('No Hp'),
-                      subtitle: Text('+62 83819049467'),
-                    ),
-                    ),
-                    Card(
-                      elevation: 3,
-                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
-                      child:  ListTile(
-                      leading: Icon(Icons.home, color: Colors.deepOrange,),
-                      title: Text('Alamat'),
-                      subtitle: Text('Mulya Asri 2 Blok H2/06'),
-                    ),
-                    ),
-                    Card(
-                      elevation: 3,
-                      margin: EdgeInsets.symmetric(vertical:4 ,horizontal:6 ),
-                      child:  ListTile(
-                      leading: Icon(Icons.person, color: Colors.deepOrange,),
-                      title: Text('Github'),
-                      subtitle: Text('Rayhaihsanf'),
-                    ),
-                    ),
-                  ],
-                )
+                DataDiri(),
               ],
             )),
             SizedBox(height: 15),
@@ -240,6 +201,53 @@ class ProfilSaya extends StatelessWidget {
       child: Icon(Icons.add, color: Colors.white,),
       backgroundColor: Colors.deepOrange,
       ),      
+    );
+  }
+}
+class DataDiri extends StatelessWidget {
+  const DataDiri({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+        children: [
+        Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
+          child: ListTile(
+            leading: Icon(Icons.email, color: Colors.deepOrange),
+            title: Text('Email'),
+            subtitle: Text('rayhanihsanfadhilah@gmail.com'),
+          ),
+        ),
+        Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
+          child: ListTile(
+            leading: Icon(Icons.phone, color: Colors.deepOrange),
+            title: Text('No Hp'),
+            subtitle: Text('+62 83819049467'),
+          ),
+        ),
+        Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
+          child: ListTile(
+            leading: Icon(Icons.home, color: Colors.deepOrange),
+            title: Text('Alamat'),
+            subtitle: Text('Mulya Asri 2 Blok H2/06'),
+          ),
+        ),
+        Card(
+          elevation: 3,
+          margin: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
+          child: ListTile(
+            leading: Icon(Icons.person, color: Colors.deepOrange),
+            title: Text('Github'),
+            subtitle: Text('Rayhaihsanf'),
+          ),
+        ),
+      ],
     );
   }
 }
