@@ -90,7 +90,8 @@ class ProfilSaya extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.black
               ),),
-            )
+            ),
+            Divider(),
           ],
         ),
       ),
