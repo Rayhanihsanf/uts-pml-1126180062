@@ -47,7 +47,35 @@ class ProfilSaya extends StatelessWidget {
               backgroundColor: Colors.grey,
             ),
             SizedBox(height: 15,),
-
+            Text(
+              nama,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+            Text(
+              nim,
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.black,
+              ),
+            ),
+            Text(
+              prodi,
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.black,
+              ),
+            ),
+            Text(
+              role,
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
