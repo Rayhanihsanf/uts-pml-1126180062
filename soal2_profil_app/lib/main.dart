@@ -42,6 +42,11 @@ class _ProfileAppState extends State<ProfileApp> {
         centerTitle: false,
         elevation: 0,
       ),
+      cardTheme: CardThemeData(
+        color: isLight ? Colors.white : const Color(0xFF2B2420),
+        elevation: isLight ? 1 : 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      ),
       
     );
   }
