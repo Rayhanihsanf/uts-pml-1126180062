@@ -47,6 +47,10 @@ class _ProfileAppState extends State<ProfileApp> {
         elevation: isLight ? 1 : 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: isLight ? Colors.white : const Color(0xFF2B2420),
+      ),
       
     );
   }
