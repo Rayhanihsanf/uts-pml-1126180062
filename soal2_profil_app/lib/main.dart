@@ -54,7 +54,10 @@ class _ProfileAppState extends State<ProfileApp> {
       navigationBarTheme: NavigationBarThemeData(
         indicatorColor: scheme.primaryContainer,
       ),
-      
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: brown,
+        foregroundColor: Colors.white,
+      ),
     );
   }
 
