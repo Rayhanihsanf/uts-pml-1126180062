@@ -64,7 +64,22 @@ class _ProfileAppState extends State<ProfileApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      debugShowCheckedModeBanner: false,
+      title: 'Profil Mahasiswa',
+      theme: _buildTheme(Brightness.light),
+      darkTheme: _buildTheme(Brightness.dark),
+      themeMode: _themeMode,
+      home: _isLoggedIn
+          ? ProfilePage(
+              profile: _profile,
+              onProfileChanged: (value) => setState(() => _profile = value),
+              onLogout: () => setState(() => _isLoggedIn = false),
+              isDarkMode: _themeMode == ThemeMode.dark,
+              onThemeChanged: _changeTheme,
+            )
+          : LoginPage(
+              onLogin: () => setState(() => _isLoggedIn = true),
+            ),
     );
   }
 }
