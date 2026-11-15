@@ -51,6 +51,9 @@ class _ProfileAppState extends State<ProfileApp> {
         filled: true,
         fillColor: isLight ? Colors.white : const Color(0xFF2B2420),
       ),
+      navigationBarTheme: NavigationBarThemeData(
+        indicatorColor: scheme.primaryContainer,
+      ),
       
     );
   }
