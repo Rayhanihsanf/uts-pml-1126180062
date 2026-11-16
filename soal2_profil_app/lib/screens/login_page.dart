@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'PROFILE APP',
+                  'PROFILE MAHASISWA',
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1.5,
@@ -46,11 +46,6 @@ class LoginPage extends StatelessWidget {
                       child: Text('Masuk'),
                     ),
                   ),
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  'Aplikasi Profil Mahasiswa',
-                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
             ),
