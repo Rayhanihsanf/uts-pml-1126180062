@@ -13,7 +13,7 @@ class AboutPage extends StatelessWidget {
     final hobbies = [
       ('Badminton', 'Olahraga dan menjaga kebugaran.', Icons.sports_tennis),
       ('Billiard', 'Mengisi waktu luang dan melatih fokus.', Icons.sports),
-      ('Belajar Teknologi', 'Mengeksplorasi teknologi dan hal baru.', Icons.computer),
+      ('Bersepeda', 'Melatih otot dan menjaga kebugaran.', Icons.bike_scooter),
     ];
     final education = [
       ('Perguruan Tinggi', 'Global Institute of Technology and Business'),
