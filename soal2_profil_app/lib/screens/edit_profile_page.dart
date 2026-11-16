@@ -18,7 +18,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
   late final TextEditingController _kelasController;
   late final TextEditingController _bioController;
   late final TextEditingController _emailController;
-  late final TextEditingController _hpController;
+  late final TextEditingController _hpController; 
   late final TextEditingController _githubController;
 
   @override
